@@ -149,7 +149,6 @@ img {
 .nav-link.current {
     position: relative;
     opacity: 1;
-
 }
 
 .nav-link::after {
