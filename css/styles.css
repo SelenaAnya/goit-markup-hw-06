@@ -72,30 +72,21 @@ button {
 
 /* Mobile screen - base styles */
 .container {
-    min-width: 320px;
-    max-width: 375px;
-
-    padding: 0 20px;
+    max-width: 320px;
+    padding: 0 16px;
     margin: 0 auto;
-
-    /* outline: 2px solid red; */
-    outline-offset: -2px;
 }
 
-/* Tablet screen */
-
-@media screen and (min-wight: 768px) {
+@media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
-        padding: 0 16px;
     }
 }
 
-/* Desktop screen */
-
-@media screen and (min-wight: 1168px) {
+@media screen and (min-width: 1158px) {
     .container {
-        max-width: 1168px;
+        max-width: 1158px;
+        padding: 0 15px;
     }
 }
 
@@ -145,10 +136,29 @@ button {
 }
 
 .mobver {
+    padding: 0;
+    background-color: transparent;
     border: none;
 }
 
 .btn-burger {
     display: block;
     fill: #2F2F37;
+}
+
+@media screen and (min-width: 768px) {
+    .mobver {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .contacts {
+        font-style: normal;
+        display: block;
+    }
 }
