@@ -44,7 +44,6 @@ ol {
     padding: 0;
 }
 
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -71,23 +70,32 @@ button {
     display: inline-block;
 }
 
+/* Mobile screen - base styles */
 .container {
-    max-width: 320px;
-    padding: 0 16px;
+    min-width: 320px;
+    max-width: 375px;
+
+    padding: 0 20px;
     margin: 0 auto;
+
+    /* outline: 2px solid red; */
+    outline-offset: -2px;
 }
+
+/* Tablet screen */
 
 @media screen and (min-wight: 768px) {
     .container {
         max-width: 768px;
-
+        padding: 0 16px;
     }
 }
 
-@media screen and (min-wight: 1158px) {
+/* Desktop screen */
+
+@media screen and (min-wight: 1168px) {
     .container {
-        max-width: 1158px;
-        padding: 0 15px;
+        max-width: 1168px;
     }
 }
 
@@ -100,9 +108,47 @@ button {
         0px 2px 1px 0px #2E2F4214;
 }
 
-/* @media screen and (min-wight: 768px) {
-    .container {
-        max-width: 768px;
+.nav-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-    }
-} */
+.nav-menu,
+.contacts {
+    display: none;
+}
+
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    margin-right: 76px;
+
+}
+
+.logo-header {
+    padding: 16px 0;
+    display: block;
+}
+
+.logo-header .logo-text {
+    color: #2e2f42;
+}
+
+.footer-logo .logo-text {
+    color: #f4f4fd;
+}
+
+.mobver {
+    border: none;
+}
+
+.btn-burger {
+    display: block;
+    fill: #2F2F37;
+}
