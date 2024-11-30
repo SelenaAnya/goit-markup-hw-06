@@ -1,3 +1,7 @@
+.hide {
+    display: none;
+}
+
 body {
     font-family: "Raleway", sans-serif;
     font-family: "Roboto", sans-serif;
@@ -79,6 +83,8 @@ img {
     width: 100%;
     height: auto;
 }
+
+/* Logo+menu */
 
 .header-page {
     border-bottom: 1px solid #e7e9fc;
