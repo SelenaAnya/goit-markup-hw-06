@@ -564,7 +564,7 @@ button {
         margin-right: 120px;
     }
 
-    .nav-link {
+    /* .nav-link {
         display: block;
         padding: 24px 0;
         font-weight: 500;
@@ -577,7 +577,7 @@ button {
 
     .nav-link.current {
         position: relative;
-        /* opacity: 1; */
+        opacity: 1;
     }
 
     .nav-link::after {
@@ -608,9 +608,128 @@ button {
     .contacts-link:focus,
     .nav-link.current {
         color: #404bbf;
+    } */
+
+    .hero {
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/peopleoffice.jpg);
+
+        background-repeat: no-repeat;
+        padding: 188px 0;
+        background-position: center;
+        background-size: cover;
+        padding: 112px 136px;
+    }
+
+    .hero-title {
+        font-size: 56px;
+        line-height: 1.07;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #ffffff;
+        cursor: pointer;
+        max-width: 768px;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 36px;
+
+    }
+
+    .btn-business {
+        background-color: #4d5ae5;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: #ffffff;
+        display: block;
+        min-width: 169px;
+        height: 56px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin: 0 auto;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .btn-business:hover,
+    .btn-business:focus {
+        background-color: #404BBF;
+    }
+
+    .icon-conpany {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        display: none;
+    }
+
+    .company {
+        padding: 96px 0;
+    }
+
+    .about-company {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 48px;
+        justify-content: center;
+    }
+
+    .about-block {
+        letter-spacing: 0.02em;
+        line-height: 1.24;
+        width: calc((100% - 72px) / 2);
+    }
+
+    .block-team {
+        background-color: #f4f4fd;
+        padding: 96px 0;
+        text-align: center;
+    }
+
+    .team-list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 64px;
+        justify-content: center;
+
+    }
+
+    .title-team {
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: #2e2f42;
+        margin-bottom: 72px;
+    }
+
+    .representative {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+    }
+
+    .text-card {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+        text-align: center;
+        margin-bottom: 8px;
     }
 
 }
+
 
 @media screen and (min-width: 1158px) {
     .logo-header {
