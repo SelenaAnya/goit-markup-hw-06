@@ -423,7 +423,7 @@ button {
         text-align: center;
         justify-content: center;
         flex-direction: column;
-        gap: 24px;
+        /* gap: 24px; */
     }
 
     .subscribe {
@@ -443,6 +443,11 @@ button {
         letter-spacing: 0.04em;
         font-size: 12px;
         border: 1px solid #FFFFFF;
+
+    }
+
+    .subscribe-mail {
+        margin-bottom: 16px;
     }
 
     .btn-submit {
@@ -462,10 +467,10 @@ button {
         align-items: center;
         color: #FFFFFF;
         border: none;
+        margin-left: 61px;
     }
 
     .btn-plaine {
-        /* margin-left: 16px; */
         fill: #ffffff;
     }
 }
