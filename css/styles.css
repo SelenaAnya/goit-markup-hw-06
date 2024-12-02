@@ -85,25 +85,52 @@ button {
 /* Mobile screen - base styles */
 
 .container {
-    max-width: 320px;
-    padding: 0 16px;
+    max-width: 375px;
+    min-width: 320px;
     margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section {
+    padding: 40px 0;
 }
 
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
+        padding: 0 16px;
     }
 }
 
 @media screen and (min-width: 1158px) {
     .container {
-        max-width: 1158px;
-        padding: 0 15px;
+        max-width: 1168px;
+        /* padding: 0 15px; */
     }
 }
 
 /* header */
+
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.11;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+    gap: 4px;
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        font-size: 18px;
+    }
+}
+
 
 .header-page {
     border-bottom: 1px solid #e7e9fc;
@@ -237,6 +264,23 @@ button {
         color: #404bbf;
     }
 
+}
 
+@media screen and (min-wight: 768px) {
+    .logo-header {
+        margin-right: 76px;
+    }
 
+    .contacts-list {
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .contacts-link {
+        padding: 24px 0;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
 }
