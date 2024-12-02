@@ -207,6 +207,7 @@ button {
 
     .contacts-list {
         display: flex;
+        flex-direction: column;
         text-align: center;
         gap: 12px;
     }
@@ -266,7 +267,7 @@ button {
 
 }
 
-@media screen and (min-wight: 768px) {
+@media screen and (min-wight: 1158px) {
     .logo-header {
         margin-right: 76px;
     }
@@ -284,3 +285,5 @@ button {
         letter-spacing: 0.02em;
     }
 }
+
+/* @media screen and (min-width: 768px) {} */
