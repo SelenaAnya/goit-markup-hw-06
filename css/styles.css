@@ -339,14 +339,52 @@ button {
 }
 
 .el-mob-menu {
-    font-family: "Roboto",
-        sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 36px;
     font-weight: 700;
     line-height: 40px;
     letter-spacing: 0.02em;
     text-align: left;
     text-decoration-skip-ink: none;
+    margin-bottom: 40px;
+    color: #434455;
+}
+
+.mob-contacts {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 128px;
+}
+
+.mob-contacts-list {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.mob-contacts-link {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    text-decoration-skip-ink: none;
+    margin-bottom: 24px;
+    color: #434455;
+}
+
+.el-mob-menu:hover,
+.el-mob-menu:focus,
+.mob-contacts-link:hover,
+.mob-contacts-link:focus {
+    color: #4D5AE5;
+}
+
+.mob-block-menu {
+    display: flex;
+    flex-direction: column;
 }
 
 .card-content {
@@ -354,6 +392,8 @@ button {
     justify-content: center;
     align-items: center;
     gap: 24px;
+    position: absolute;
+    bottom: 40px;
 }
 
 .social {
@@ -386,12 +426,60 @@ button {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .mobile-menu:not(.is-open) .mobile-menu-container {
-    transform: translate(-50%, -100%);
-} */
 
 @media screen and (min-width: 768px) {
     .mobile-menu {
         display: none;
     }
 }
+
+/* hero */
+
+.hero {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)), url(../images/mobile/bg-hero.jpg);
+}
+
+.hero-title {
+    font-size: 36px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    cursor: pointer;
+    max-width: 496px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 48px;
+
+}
+
+.btn-business {
+    background-color: #4d5ae5;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    /* bottom: none; */
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-business:hover,
+.btn-business:focus {
+    background-color: #404BBF;
+}
+
+@media screen and (min-width: 768px) {}
