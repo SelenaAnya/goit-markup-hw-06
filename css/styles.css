@@ -685,7 +685,7 @@ button {
 
 
 .checkbox-block {
-    display: flex;
+
     margin-bottom: 24px;
 
 }
@@ -707,8 +707,7 @@ button {
 }
 
 .rule {
-    /* display: inline-flex; */
-
+    display: inline-flex;
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -717,6 +716,11 @@ button {
     align-items: center;
     justify-content: center;
     fill: transparent;
+}
+
+.text-checkbox {
+    display: flex;
+    align-items: center;
 }
 
 input[type="checkbox"]:checked+.text-checkbox>.rule {
@@ -780,6 +784,7 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
 }
 
 @media screen and (min-width: 1158px) {
+
     .backdrop {
         position: fixed;
         top: 0;
@@ -793,4 +798,76 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
         transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
             visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+}
+
+.icon-conpany {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    border-radius: 4px;
+}
+
+.company {
+    padding: 120px 0;
+}
+
+.about-company {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 24px;
+}
+
+.about-block {
+    min-width: 288px;
+    letter-spacing: 0.02em;
+    line-height: 1.24;
+    margin-bottom: 72px;
+    /* width: calc((100% - 72px) / 4); */
+}
+
+.icon-conpany {
+    display: none;
+}
+
+.target-company {
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    text-align: justify;
+}
+
+@media screen and (min-width: 768px) {
+    .about-block {
+        letter-spacing: 0.02em;
+        line-height: 1.24;
+        width: calc((100% - 72px) / 4);
+    }
+
+    .about-company {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        gap: 24px;
+    }
+
+    .target-company {
+        font-weight: 700;
+        font-size: 36px;
+        text-align: left;
+    }
+
 }
