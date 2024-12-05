@@ -804,7 +804,7 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
     }
 }
 
-.icon-conpany {
+.icon-company {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -830,7 +830,7 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
     /* width: calc((100% - 72px) / 4); */
 }
 
-.icon-conpany {
+.icon-company {
     display: none;
 }
 
@@ -877,11 +877,14 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
 }
 
 @media screen and (min-width: 1158px) {
-    .icon-conpany {
+    .icon-company {
         display: flex;
         align-items: center;
         justify-content: center;
         border-radius: 4px;
+        background: #F4F4FD;
+        border: 1px solid #8E8F99;
+        margin-bottom: 8px;
     }
 
     .company {
@@ -890,6 +893,7 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
 
     .about-company {
         display: flex;
+        flex-wrap: nowrap;
         gap: 24px;
     }
 
@@ -899,15 +903,25 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
         width: calc((100% - 72px) / 4);
     }
 
-    .icon-conpany {
-        background: #F4F4FD;
-        border: 1px solid #8E8F99;
-        margin-bottom: 8px;
+    .target-company {
+        font-weight: 500;
     }
 
     .text {
         font-weight: 400;
         font-size: 16px;
     }
+}
 
+/* our team */
+
+.block-team {
+    background-color: #f4f4fd;
+    padding: 96px 28px;
+}
+
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px;
 }
