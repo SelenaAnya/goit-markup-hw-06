@@ -1029,6 +1029,6 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 24px;
+        gap: 12px;
     }
 }
