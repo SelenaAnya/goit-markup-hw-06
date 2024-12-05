@@ -660,6 +660,8 @@ label {
     fill: #ffffff;
 }
 
+/* modal */
+
 .backdrop {
     position: fixed;
     top: 0;
