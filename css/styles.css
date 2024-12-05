@@ -687,7 +687,6 @@ button {
     border-color: #4D5AE5;
 }
 
-
 .checkbox-block {
 
     margin-bottom: 24px;
@@ -804,6 +803,8 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
     }
 }
 
+/* company */
+
 .icon-company {
     display: flex;
     align-items: center;
@@ -827,7 +828,6 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
     letter-spacing: 0.02em;
     line-height: 1.24;
     margin-bottom: 72px;
-    /* width: calc((100% - 72px) / 4); */
 }
 
 .icon-company {
@@ -937,7 +937,6 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
     justify-content: center;
 }
 
-
 .representative {
     font-weight: 500;
     font-size: 20px;
@@ -1023,6 +1022,10 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
 
     .our-team {
         width: calc((100% - 48px) / 2);
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 2px 1px rgba(46, 47, 66, 0.08);
     }
 
     .card-content {
@@ -1030,5 +1033,113 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
         justify-content: center;
         align-items: center;
         gap: 12px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .our-team {
+        background-color: #ffffff;
+        width: calc((100% - 72px) / 4);
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 2px 1px rgba(46, 47, 66, 0.08);
+    }
+}
+
+/* our portfolio */
+
+.portfolio-team {
+    padding: 96px 16px;
+}
+
+.portfolio {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
+    margin-bottom: 72px;
+}
+
+.card-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+}
+
+.our-portfolio {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.our-portfolio:hover,
+.our-portfolio:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.card-team {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
+.portfolio-name {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    /* margin-bottom: 8px; */
+}
+
+.text-portfolio {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+
+}
+
+.back-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition-property: transform, box-shadow; */
+    width: 100%;
+    height: 100%;
+    color: #F4F4FD;
+    background-color: #4D5AE5;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    padding: 40px 32px;
+}
+
+.our-portfolio:hover .overlay {
+    transform: translateY(0);
+}
+
+@media screen and (min-width: 768px) {
+    .card-portfolio {
+        justify-content: center;
+        column-gap: 24px;
+    }
+
+    .our-portfolio {
+        width: calc((100% - 48px) / 2);
     }
 }
