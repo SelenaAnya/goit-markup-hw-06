@@ -1012,9 +1012,23 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
 }
 
 @media screen and (min-width: 768px) {
+    .container-team {
+        max-width: 552px;
+        margin: 0 auto;
+    }
 
+    .team-list {
+        justify-content: space-between;
+    }
 
     .our-team {
         width: calc((100% - 48px) / 2);
+    }
+
+    .card-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
     }
 }
