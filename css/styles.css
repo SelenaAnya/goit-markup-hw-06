@@ -277,13 +277,13 @@ button {
 
     .contacts-list {
         flex-direction: row;
-        align-items: right;
-
+        justify-content: right;
         gap: 40px;
+        padding: 24px 0;
+  
     }
 
     .contacts-link {
-        padding: 24px 0;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -445,7 +445,7 @@ button {
     background-size: cover;
     background-image: linear-gradient(to bottom,
             rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)), url(../images/mobile/bg-hero.jpg);
+            rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
 }
 
 .hero-title {
