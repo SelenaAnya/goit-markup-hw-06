@@ -1071,7 +1071,6 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
 
 .our-portfolio {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .our-portfolio:hover,
@@ -1170,7 +1169,6 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
 .footer-block {
     justify-content: center;
     text-align: center;
-    /* margin-right: 120px; */
     margin-bottom: 72px;
 
 }
@@ -1188,6 +1186,11 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
     text-align: center;
 }
 
+.logo.footer-logo {
+    margin: 0 auto;
+}
+
+
 .text-footer {
     max-width: 264px;
     line-height: 1.5;
@@ -1200,7 +1203,6 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
 }
 
 .footer-social {
-    /* margin-right: 120px; */
     justify-content: center;
     margin-bottom: 72px;
 }
@@ -1246,22 +1248,18 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    justify-content: center;
     gap: 24px;
 }
 
 .subscribe {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
 }
 
-label {
-    display: flex;
-    flex-direction: column;
-}
-
 .modal {
+    margin: 0 auto;
     padding: 24px;
 }
 
@@ -1279,7 +1277,6 @@ label {
     line-height: 2;
     letter-spacing: 0.04em;
     color: #ffffff;
-    text-align: center;
 }
 
 .btn-submit {
@@ -1301,6 +1298,68 @@ label {
 }
 
 .btn-plaine {
-    /* margin-left: 16px; */
     fill: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        padding: 0;
+    }
+
+    .footer-inf {
+        display: flex;
+        text-align: left;
+        flex-wrap: wrap;
+        padding: 108px 96px;
+    }
+
+    .footer-block {
+        margin-right: 24px;
+        text-align: justify;
+    }
+
+    .footer-logo.logo {
+        margin-bottom: 16px;
+        padding: 0;
+        text-align: left;
+    }
+
+    .subscribe {
+        max-width: 453px;
+    }
+
+    .media {
+        margin-bottom: 16px;
+        text-align: left;
+    }
+
+    .footer-form {
+        flex-wrap: nowrap;
+        text-align: left;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1158px) {
+    .footer-inf {
+        display: flex;
+        flex-wrap: nowrap;
+        text-align: left;
+        align-items: baseline;
+    }
+
+    .footer-block {
+        margin-right: 120px;
+    }
+
+
+
+    .footer-social {
+        margin-right: 120px;
+    }
+
+
+
 }

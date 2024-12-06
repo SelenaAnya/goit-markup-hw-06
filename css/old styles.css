@@ -581,7 +581,6 @@ img {
 
 .footer-social .card-content {
     gap: 16px;
-    /* display: flex; */
     justify-content: left;
 }
 
