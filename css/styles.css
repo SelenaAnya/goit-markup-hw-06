@@ -1350,9 +1350,10 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
         align-items: baseline;
     }
 
+    /* 
     .footer-block {
         margin-right: 120px;
-    }
+    } */
 
 
 
