@@ -918,6 +918,7 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
         letter-spacing: 0.02em;
         line-height: 1.24;
         width: calc((100% - 72px) / 4);
+        margin: 0 auto;
 
     }
 
@@ -1370,10 +1371,9 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
         padding: 100px 0;
     }
 
-    /* 
     .footer-block {
         margin-right: 120px;
-    } */
+    }
 
 
 
