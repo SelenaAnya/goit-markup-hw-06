@@ -903,19 +903,22 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
     }
 
     .company {
-        padding: 120px 0;
+        padding: 120px 156px;
     }
 
     .about-company {
         display: flex;
         flex-wrap: nowrap;
         gap: 24px;
+        align-items: center;
+        justify-content: center;
     }
 
     .about-block {
         letter-spacing: 0.02em;
         line-height: 1.24;
         width: calc((100% - 72px) / 4);
+
     }
 
     .target-company {
@@ -1310,6 +1313,7 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
     align-items: center;
     color: #FFFFFF;
     border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-plaine {
@@ -1374,7 +1378,7 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
 
 
     .footer-social {
-        margin-right: 120px;
+        margin-right: 80px;
     }
 
 
