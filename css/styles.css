@@ -85,7 +85,6 @@ button {
 /* Mobile screen - base styles */
 
 .container {
-    /* max-width: 375px; */
     min-width: 320px;
     margin: 0 auto;
     padding: 0 16px;
@@ -98,7 +97,7 @@ button {
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
-        padding: 0 16px;
+        /* padding: 0 16px; */
     }
 }
 
@@ -221,7 +220,7 @@ button {
 
     .logo-header {
         padding: 24px 0;
-        margin-right: 120px;
+        /* margin-right: 120px; */
     }
 
     .contacts {
@@ -296,6 +295,17 @@ button {
 }
 
 @media screen and (min-width: 1158px) {
+
+    .nav-block {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+    }
+
     .logo-header {
         margin-right: 76px;
     }
@@ -494,6 +504,8 @@ button {
     .mobile-menu {
         display: none;
     }
+
+
 }
 
 /* hero */
@@ -555,6 +567,7 @@ button {
     }
 
     .hero-title {
+        min-width: 496px;
         font-size: 56px;
         margin-bottom: 48px;
     }
@@ -572,6 +585,13 @@ button {
         background-position: center;
         background-size: cover;
     }
+
+    .hero-title {
+        min-width: 496px;
+        margin-bottom: 48px;
+    }
+
+
 }
 
 @media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
@@ -1357,7 +1377,7 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
 }
 
 .form {
-    width: 288px;
+    min-width: 288px;
     height: 40px;
     border: 1px solid #FFFFFF;
     border-radius: 4px;
@@ -1435,6 +1455,11 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
         margin-bottom: 16px;
         text-align: left;
     }
+
+    .form {
+        min-width: 264px;
+    }
+
 
     .footer-form {
         flex-wrap: nowrap;
