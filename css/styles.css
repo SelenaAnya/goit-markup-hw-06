@@ -1358,14 +1358,13 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
 }
 
 .form {
-    min-width: 288px;
+    width: 288px;
     height: 40px;
     border: 1px solid #FFFFFF;
     border-radius: 4px;
     padding-left: 16px;
     box-shadow: 0px 4px 4px 0px #00000026;
     margin-bottom: 8px;
-    width: 264px;
     background-color: transparent;
     font-size: 12px;
     line-height: 2;
@@ -1409,6 +1408,9 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
     }
 
     .footer-block {
+        /* display: flex;
+        flex-wrap: nowrap; */
+        max-width: 264px;
         margin-right: 24px;
         text-align: justify;
     }
