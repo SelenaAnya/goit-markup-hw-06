@@ -144,6 +144,8 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+
+
     .logo {
         font-size: 18px;
     }
@@ -234,8 +236,6 @@ button {
         flex-direction: column;
         text-align: right;
         gap: 12px;
-        /* margin-right: 16px; */
-
     }
 
     .contacts-link {
@@ -245,7 +245,6 @@ button {
         letter-spacing: 0.04em;
         color: #434455;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
     }
 
     .nav-menu {
@@ -255,12 +254,7 @@ button {
     }
 
     .nav-link {
-        position: relative;
-        display: block;
-        padding: 24px 0;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
+        /* position: relative; */
         letter-spacing: 0.02em;
         color: #2e2f42;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -268,6 +262,7 @@ button {
 
     .nav-link.current {
         position: relative;
+        opacity: 1;
     }
 
     .nav-link::after {
@@ -932,7 +927,7 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
     gap: 24px;
 }
 
-.about-block {
+.about-block:nth-child(3+1) {
     min-width: 288px;
     letter-spacing: 0.02em;
     line-height: 1.24;
@@ -967,7 +962,7 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
         letter-spacing: 0.02em;
         line-height: 1.24;
         width: calc((100% - 48px) / 2);
-        gap: 24px;
+
     }
 
     .about-company {
