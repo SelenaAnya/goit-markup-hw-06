@@ -1286,7 +1286,6 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
 
 
 .text-footer {
-    max-width: 264px;
     line-height: 1.5;
     color: #f4f4fd;
     letter-spacing: 0.02em;
@@ -1408,9 +1407,8 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
     }
 
     .footer-block {
-        /* display: flex;
-        flex-wrap: nowrap; */
-        max-width: 264px;
+        display: inline-block;
+        width: 264px;
         margin-right: 24px;
         text-align: justify;
     }
@@ -1421,8 +1419,16 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
         text-align: left;
     }
 
+    .text-footer {
+        min-width: 264px;
+    }
+
+    .footer-social {
+        display: inline-block;
+    }
+
     .subscribe {
-        max-width: 453px;
+        width: 453px;
     }
 
     .media {
