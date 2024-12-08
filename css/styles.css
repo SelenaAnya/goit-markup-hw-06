@@ -111,7 +111,7 @@ button {
 
 /* header */
 
-.logo {
+/* .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 14px;
@@ -123,6 +123,25 @@ button {
     padding: 20px 0;
     align-items: center;
     gap: 4px;
+} */
+
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+}
+
+.logo-header {
+    padding: 24px 0;
+    margin-right: 76px;
+}
+
+.logo-header .logo-text {
+    color: #2e2f42;
 }
 
 @media screen and (min-width: 768px) {
@@ -486,6 +505,7 @@ button {
     background-image: linear-gradient(to bottom,
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    padding: 96px 0;
 }
 
 .hero-title {
@@ -495,7 +515,7 @@ button {
     letter-spacing: 0.02em;
     color: #ffffff;
     cursor: pointer;
-    max-width: 496px;
+    max-width: 216px;
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -1142,6 +1162,7 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
     display: flex;
     flex-wrap: wrap;
     row-gap: 48px;
+    justify-content: center;
 }
 
 .our-portfolio {
@@ -1257,6 +1278,8 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
 }
 
 .footer-block {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     margin-bottom: 72px;
