@@ -566,8 +566,6 @@ button {
         min-width: 496px;
         margin-bottom: 48px;
     }
-
-
 }
 
 @media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
@@ -584,7 +582,7 @@ button {
     }
 }
 
-/* modal form */
+/* modal form
 
 .backdrop {
     position: fixed;
@@ -888,6 +886,7 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
     }
 }
 
+*/
 /* company */
 
 .icon-company {
