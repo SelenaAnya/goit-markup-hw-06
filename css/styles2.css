@@ -105,8 +105,8 @@ button {
     .container {
         min-width: 1158px;
         /* padding: 0 15px; */
-}
-}
+/* } */
+/* } */
 
 */ */
 /* header */
@@ -271,7 +271,7 @@ button {
         color: #404bbf;
     }
 } */
-
+/* 
 @media screen and (min-width: 1158px) {
 
     .nav-block {
@@ -335,7 +335,7 @@ button {
     .contacts-link:focus {
         color: #404bbf;
     }
-}
+} */
 
 /* mobile-menu */
 /* 
@@ -759,7 +759,7 @@ button {
     outline: transparent;
     border: 1px solid rgba(46, 47, 66, 0.4);
     /* margin-bottom: 16px; */
-}
+/* } */
 
 .user-comment:focus {
     border-color: #4D5AE5;
@@ -886,8 +886,8 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
     }
 }
 
-*/
 /* company */
+
 
 .icon-company {
     display: flex;
