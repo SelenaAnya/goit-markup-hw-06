@@ -878,6 +878,7 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
 
     .about-block {
         width: calc((100% - 48px) / 2);
+        align-items: center;
     }
 
     .about-block:nth-child(-n+2) {
@@ -891,10 +892,18 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
         padding: 120px 0;
     }
 
+    .about-company {
+        align-items: stretch;
+    }
+
     .about-block {
         width: calc((100% - 72px) / 4);
-
     }
+
+    body .about-block:nth-child(-n+2) {
+        margin-bottom: 0;
+    }
+
 
     .icon-company {
         display: flex;
@@ -924,6 +933,7 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
     }
 
     .text {
+        font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -931,7 +941,4 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
         text-align: left;
     }
 
-    body .about-block:nth-child(-n+2) {
-        margin-bottom: 0 !important;
-    }
 }
