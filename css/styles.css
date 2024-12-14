@@ -904,7 +904,6 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
         margin-bottom: 0;
     }
 
-
     .icon-company {
         display: flex;
         flex-wrap: nowrap;
@@ -1026,4 +1025,16 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
 .socials-link:hover,
 .socials-link:focus {
     background: #404BBF;
+}
+
+@media screen and (min-width: 768px) {
+    .our-team:nth-child(2n+2) {
+        margin-left: 24px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .our-team:nth-child(4n) {
+        margin-left: 24px;
+    }
 }
