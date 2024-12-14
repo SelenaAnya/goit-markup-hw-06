@@ -1034,7 +1034,7 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
 }
 
 @media screen and (min-width: 1158px) {
-    .our-team:nth-child(4n) {
+    body .our-team:nth-child(4n) {
         margin-left: 24px;
     }
 }
