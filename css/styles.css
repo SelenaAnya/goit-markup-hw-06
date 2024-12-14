@@ -829,11 +829,7 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
 /* company */
 
 .icon-company {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 112px;
-    border-radius: 4px;
+    display: none;
 }
 
 .company {
@@ -843,17 +839,10 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
 .about-company {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
-}
-
-.about-block {
-    min-width: 288px;
-    letter-spacing: 0.02em;
-    line-height: 1.24;
-}
-
-.icon-company {
-    display: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 72px;
 }
 
 .target-company {
@@ -863,7 +852,6 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
     color: #2e2f42;
     line-height: 1.2;
     margin-bottom: 8px;
-    text-align: center;
 }
 
 .text {
@@ -876,25 +864,74 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
 }
 
 @media screen and (min-width: 768px) {
-    .about-block {
-        letter-spacing: 0.02em;
-        line-height: 1.24;
-        width: calc((100% - 48px) / 2);
-        grid-gap: 72px 24px;
+    .company {
+        margin: 0 auto;
     }
-
-
 
     .about-company {
         align-items: center;
         justify-content: center;
         display: flex;
         gap: 24px;
+        margin: 0;
+    }
+
+    .about-block {
+        width: calc((100% - 48px) / 2);
+    }
+
+    .about-block:nth-child(-n+2) {
+        margin-bottom: 72px;
+    }
+
+}
+
+@media screen and (min-width: 1158px) {
+    .company {
+        padding: 120px 0;
+    }
+
+    .about-block {
+        width: calc((100% - 72px) / 4);
+
+    }
+
+    .icon-company {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        height: 112px;
+        border-radius: 4px;
+        background: #F4F4FD;
+        border: 1px solid #8E8F99;
+        margin-bottom: 8px;
+        height: 112px;
+    }
+
+    .logo-icon {
+        margin: 24px 100px;
     }
 
     .target-company {
-        font-weight: 700;
-        font-size: 36px;
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+        line-height: 1.2;
+        margin-bottom: 8px;
         text-align: left;
+    }
+
+    .text {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+        text-align: left;
+    }
+
+    about-block:nth-child(1n+1) {
+        margin-bottom: 0 !important;
     }
 }
