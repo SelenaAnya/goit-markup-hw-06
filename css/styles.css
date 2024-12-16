@@ -1150,6 +1150,12 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
 
 
 @media screen and (min-width: 1158px) {
+
+    .portfolio-team {
+        padding: 120px 0;
+        margin: 0 auto;
+    }
+
     .our-portfolio {
         width: calc((100% - 48px) / 3);
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1162,4 +1168,17 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
             0px 1px 1px rgba(46, 47, 66, 0.16),
             0px 2px 1px rgba(46, 47, 66, 0.08);
     }
+}
+
+/* footer */
+
+.footer {
+    padding: 96px 0;
+    background-color: #2e2f42;
+}
+
+.footer-inf {
+    display: flex;
+    text-align: left;
+    align-items: baseline;
 }
