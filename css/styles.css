@@ -219,7 +219,7 @@ button {
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    /* .nav-link.current {
+    .nav-link.current {
         position: relative;
         opacity: 1;
     }
@@ -234,7 +234,7 @@ button {
         height: 4px;
         border-radius: 2px;
         background-color: #404bbf;
-    } */
+    }
 
     .contacts-link {
         display: block;
@@ -245,13 +245,13 @@ button {
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    /* .nav-link:hover,
+    .nav-link:hover,
     .nav-link:focus,
     .contacts-link:hover,
     .contacts-link:focus,
     .nav-link.current {
         color: #404bbf;
-    } */
+    }
 }
 
 @media screen and (min-width: 1158px) {
