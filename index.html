@@ -222,17 +222,35 @@
           <h2 class="title-team">Our Team</h2>
           <ul class="team-list">
             <li class="our-team">
-              <img
-                class="img-team"
-                srcset="
-                  ./images/MarkGuerrero.jpg    1x,
-                  ./images/MarkGuerrero@2x.jpg 2x
-                "
-                src="./images/MarkGuerrero.jpg"
-                height="260"
-                width="264"
-                alt="Mark Guerrero"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/MarkGuerrero-desk.jpg    1x,
+                    ./images/MarkGuerrero-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="
+                    ./images/MarkGuerrero-tab.jpg    1x,
+                    ./images/MarkGuerrero-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/MarkGuerrero-mob.jpg    1x,
+                    ./images/MarkGuerrero-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/MarkGuerrero.jpg "
+                  height="260"
+                  width="264"
+                  alt="Mark Guerrero"
+                />
+              </picture>
               <div class="text-team">
                 <h3 class="representative">Mark Guerrero</h3>
                 <p class="text-card">Product Designer</p>
@@ -312,7 +330,12 @@
                     ./images/TomFord-mob@2x.jpg 2x
                   "
                   media="(max-width: 767px)" />
-                <img src="./images/TomFord.jpg" alt="Tom Ford"
+                <img
+                  class="img-team"
+                  src="./images/TomFord.jpg"
+                  alt="Tom Ford"
+                  height="260"
+                  width="264"
               /></picture>
               <div class="text-team">
                 <h3 class="representative">Tom Ford</h3>
@@ -545,6 +568,30 @@
           <ul class="card-portfolio">
             <li class="our-portfolio">
               <div class="back-img">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/BankingApp-desk.jpg    1x,
+                      ./images/BankingApp-desk@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)" />
+                  <source
+                    srcset="
+                      ./images/portfolio-img-tab.jpg     1x,
+                      ./images/portfolio-img-tab-@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)" />
+                  <source
+                    srcset="
+                      ./images/portfolio-img-mob.jpg     1x,
+                      ./images/portfolio-img-mob-@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)" />
+                  <img
+                    src="./images/portfolio-img-mob.jpg"
+                    alt="portfolio pictxure"
+                /></picture>
+
                 <img
                   class="img-portfolio"
                   srcset="
