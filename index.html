@@ -293,14 +293,27 @@
               </div>
             </li>
             <li class="our-team">
-              <img
-                class="img-team"
-                srcset="./images/TomFord.jpg 1x, ./images/TomFord@2x.jpg 2x"
-                src="./images/TomFord.jpg"
-                height="260"
-                width="264"
-                alt="Tom Ford"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/TomFord-desk.jpg    1x,
+                    ./images/TomFord-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1158px)" />
+                <source
+                  srcset="
+                    ./images/TomFord-tab.jpg    1x,
+                    ./images/TomFord-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/TomFord-mob.jpg    1x,
+                    ./images/TomFord-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <img src="./images/TomFord.jpg" alt="Tom Ford"
+              /></picture>
               <div class="text-team">
                 <h3 class="representative">Tom Ford</h3>
                 <p class="text-card">Frontend Developer</p>
@@ -361,17 +374,27 @@
               </div>
             </li>
             <li class="our-team">
-              <img
-                class="img-team"
-                srcset="
-                  ./images/CamilaGarcia.jpg    1x,
-                  ./images/CamilaGarcia@2x.jpg 2x
-                "
-                src="./images/CamilaGarcia.jpg"
-                height="260"
-                width="264"
-                alt="Camila Garcia"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/CamilaGarcia-desk.jpg    1x,
+                    ./images/CamilaGarcia-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1158px)" />
+                <source
+                  srcset="
+                    ./images/CamilaGarcia-tab.jpg    1x,
+                    ./images/CamilaGarcia-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/CamilaGarcia-mob.jpg    1x,
+                    ./images/CamilaGarcia-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <img src="./images/CamilaGarcia.jpg" alt="Camila Garcia"
+              /></picture>
               <div class="text-team">
                 <h3 class="representative">Camila Garcia</h3>
                 <p class="text-card">Marketing</p>
@@ -432,17 +455,27 @@
               </div>
             </li>
             <li class="our-team">
-              <img
-                class="img-team"
-                srcset="
-                  ./images/DanielWilson.jpg    1x,
-                  ./images/DanielWilson@2x.jpg 2x
-                "
-                src="./images/DanielWilson.jpg"
-                height="260"
-                width="264"
-                alt="Daniel Wilson"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/DanielWilson-desk.jpg    1x,
+                    ./images/DanielWilson-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1158px)" />
+                <source
+                  srcset="
+                    ./images/DanielWilson-tab.jpg    1x,
+                    ./images/DanielWilson-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/DanielWilson-mob.jpg    1x,
+                    ./images/DanielWilson-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <img src="./images/DanielWilson.jpg" alt="Daniel Wilson"
+              /></picture>
               <div class="text-team">
                 <h3 class="representative">Daniel Wilson</h3>
                 <p class="text-card">UI Designer</p>
