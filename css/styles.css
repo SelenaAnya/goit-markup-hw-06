@@ -749,7 +749,6 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
     background-color: #404BBF;
     border: none;
     fill: #F4F4FD;
-    margin: 0 auto;
 }
 
 .rule-link {
