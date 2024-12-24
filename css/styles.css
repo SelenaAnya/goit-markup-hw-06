@@ -183,7 +183,6 @@ button {
     .nav {
         display: flex;
         align-items: center;
-        gap: 40px;
     }
 
     .contacts {
@@ -372,6 +371,7 @@ button {
     text-decoration-skip-ink: none;
     margin-bottom: 24px;
     color: #434455;
+    font-style: normal;
 }
 
 .el-mob-menu:hover,
@@ -880,6 +880,10 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
         margin-bottom: 72px;
     }
 
+    .target-company {
+        text-align: left;
+    }
+
 }
 
 @media screen and (min-width: 1158px) {
@@ -969,6 +973,10 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
         0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.our-team:last-child {
+    margin-bottom: 0;
+}
+
 .text-team {
     padding: 32px 0px;
 }
@@ -1031,6 +1039,10 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
 @media screen and (min-width: 1158px) {
     body .our-team:nth-child(2n+2) {
         margin-left: 0;
+    }
+
+    .our-team:last-child {
+        margin-bottom: auto;
     }
 
     .team-list {
