@@ -873,7 +873,6 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
 
     .about-block {
         width: calc((100% - 48px) / 2);
-        align-items: center;
     }
 
     .about-block:nth-child(-n+2) {
@@ -1034,6 +1033,14 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
     .our-team:nth-child(2n+2) {
         margin-left: 24px;
     }
+
+    .our-team:nth-child(-n+2) {
+        margin-bottom: 72px;
+    }
+
+    .our-team:nth-child(2n+1) {
+        margin-bottom: 0;
+    }
 }
 
 @media screen and (min-width: 1158px) {
@@ -1043,6 +1050,10 @@ input[type="checkbox"]:checked+.text-checkbox>.rule {
 
     .our-team:last-child {
         margin-bottom: auto;
+    }
+
+    .our-team:nth-child(n+1) {
+        margin-bottom: 0;
     }
 
     .team-list {
